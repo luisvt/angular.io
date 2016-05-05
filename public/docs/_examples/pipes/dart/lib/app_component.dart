@@ -1,10 +1,11 @@
+// #docregion
 import 'package:angular2/angular2.dart';
 
 import 'hero_async_message_component.dart';
 import 'hero_birthday2_component.dart';
 import 'hero_list_component.dart';
-import 'power_booster.dart';
-import 'power_boost_calculator.dart';
+import 'power_booster_component.dart';
+import 'power_boost_calculator_component.dart';
 
 @Component(
     selector: 'my-app',

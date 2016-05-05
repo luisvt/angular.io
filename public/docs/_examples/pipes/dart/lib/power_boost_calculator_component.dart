@@ -1,3 +1,4 @@
+// #docregion
 import 'package:angular2/angular2.dart';
 
 import 'exponential_strength_pipe.dart';

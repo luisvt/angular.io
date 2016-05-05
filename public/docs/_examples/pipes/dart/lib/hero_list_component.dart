@@ -1,13 +1,15 @@
+// #docregion
 import 'package:angular2/angular2.dart';
 
 import 'fetch_json_pipe.dart';
 
 @Component(
     selector: 'hero-list',
+// #docregion template
     template: '''
     <h4>Heroes from JSON File</h4>
 
-    <div *ngFor="#hero of ('heroes.json' | fetch) ">
+    <div *ngFor="let hero of ('heroes.json' | fetch) ">
       {{hero['name']}}
     </div>
 
@@ -15,5 +17,6 @@ import 'fetch_json_pipe.dart';
     {{'heroes.json' | fetch | json}}
     </p>
 ''',
+// #enddocregion template
     pipes: const [FetchJsonPipe])
 class HeroListComponent {}
