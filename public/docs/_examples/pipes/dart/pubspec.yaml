@@ -11,7 +11,9 @@ dependencies:
   rxdart: 0.3.20
 transformers:
 - angular2:
-    platform_directives: 'package:angular2/src/common/directives.dart#CORE_DIRECTIVES'
+    platform_directives:
+      - 'package:angular2/src/common/directives.dart#CORE_DIRECTIVES'
+      - 'package:angular2/src/common/forms.dart#FORM_DIRECTIVES'
     platform_pipes: 'package:angular2/common.dart#COMMON_PIPES'
     entry_points: web/main.dart
 - dart_to_js_script_rewriter

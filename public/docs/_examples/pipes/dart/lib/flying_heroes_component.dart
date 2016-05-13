@@ -12,36 +12,23 @@ import "heroes.dart";
     pipes: const [FlyingHeroesPipe])
 class FlyingHeroesComponent {
   List<Hero> heroes = [];
-  var canFly = true;
+  bool canFly = true;
   // #enddocregion v1
-  var mutate = true;
   var title = "Flying Heroes (pure pipe)";
+
+  String searchQuery;
   // #docregion v1
   FlyingHeroesComponent() {
     reset();
   }
   addHero(String name) {
     name = name.trim();
-    if (name != null) {
-      return;
-    }
+
+    if (name == null) return;
+
     var hero = new Hero(name: name, canFly: canFly);
-    // #enddocregion v1
-    if (mutate) {
-      // Pure pipe won't update display because heroes array reference is unchanged
 
-      // Impure pipe will display
-
-      // #docregion v1
-
-      // #docregion push
-      heroes.add(hero);
-    } else {
-      // Pipe updates display because heroes array is a new object
-
-      // #docregion concat
-      heroes.add(hero);
-    }
+    heroes.add(hero);
   }
 
   reset() {

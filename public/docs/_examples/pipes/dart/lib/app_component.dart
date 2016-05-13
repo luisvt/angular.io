@@ -6,6 +6,7 @@ import 'hero_birthday2_component.dart';
 import 'hero_list_component.dart';
 import 'power_booster_component.dart';
 import 'power_boost_calculator_component.dart';
+import 'package:pipe_examples/flying_heroes_component.dart';
 
 @Component(
     selector: 'my-app',
@@ -15,7 +16,9 @@ import 'power_boost_calculator_component.dart';
       HeroBirthday,
       HeroListComponent,
       PowerBooster,
-      PowerBoostCalculator
+      PowerBoostCalculator,
+      FlyingHeroesComponent,
+      FlyingHeroesImpureComponent
     ])
 class AppComponent {
   DateTime birthday = new DateTime(1988, 4, 15); // April 15, 1988

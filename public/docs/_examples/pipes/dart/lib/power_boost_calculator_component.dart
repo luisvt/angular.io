@@ -13,8 +13,7 @@ import 'exponential_strength_pipe.dart';
   Super Hero Power: {{power | exponentialStrength: factor}}
 </p>
 ''',
-    pipes: const [ExponentialStrengthPipe],
-    directives: const [COMMON_DIRECTIVES])
+    pipes: const [ExponentialStrengthPipe])
 class PowerBoostCalculator {
   // XXX: These should be ints, but that causes exceptions in checked mode.
   String power = '5';

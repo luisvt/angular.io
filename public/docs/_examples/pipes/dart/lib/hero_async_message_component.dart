@@ -16,7 +16,8 @@ import 'package:rxdart/src/observable/stream.dart';
 
     <p>Message: {{ message | async }}</p>
 
-    <button (click)="resend()">Resend</button>''')
+    <button (click)="resend()">Resend</button>''',
+    pipes: const [AsyncPipe])
 class HeroAsyncMessageComponent {
   Observable<String> message;
 
